@@ -1,11 +1,14 @@
 package se.iths.sofia.springunittestinglab.service;
 
+import org.springframework.stereotype.Service;
 import se.iths.sofia.springunittestinglab.component.AccountComponent;
 import se.iths.sofia.springunittestinglab.exception.InsufficientFundsException;
 import se.iths.sofia.springunittestinglab.exception.InvalidAmountException;
 import se.iths.sofia.springunittestinglab.exception.MaxWithdrawalExceededException;
 
+@Service
 public class ATMService {
+
 
     private static final int MAX_WITHDRAWAL_AMOUNT = 10000;
 

@@ -1,5 +1,8 @@
 package se.iths.sofia.springunittestinglab.component;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class AccountComponent {
 
     private int balance = 0;
