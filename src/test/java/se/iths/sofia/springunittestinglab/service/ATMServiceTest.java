@@ -25,6 +25,7 @@ class ATMServiceTest {
     @Mock
     AccountComponent accountComponent;
 
+    // --- Felaktiga flöden (exceptions) ---
 
     @Test
     void testDepositMoneyWithZeroAmount() {
@@ -74,6 +75,8 @@ class ATMServiceTest {
             atmService.withdrawMoney(amount);
         });
     }
+
+    // --- Normalt flöde (korrekt beteende) ---
 
 
     @Test
