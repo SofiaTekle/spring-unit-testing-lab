@@ -22,7 +22,7 @@ jobs:
 
       #INSTALLERA PLAYWRIGHT BROWSERS (Java)
       - name: Install Playwright browsers
-        run: mvn -q exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install --with-deps"
+        run: mvn -q exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
 
       # (JUnit + Mockito + E2E)
       - name: Build with Maven
